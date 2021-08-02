@@ -1,0 +1,258 @@
+.wrap-center {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  margin-top: 100px;
+  box-shadow: 0 0 80px rgb(0 0 0 / 40%);
+  background-color: aliceblue;
+}
+
+.left-column {
+  width: 40%;
+  background-color: #373d4cf1;
+}
+.right-column {
+  width: 60%;
+  height: 100%;
+  background-color: rgba(211, 211, 211, 0.116);
+}
+
+.avatar {
+  display: flex;
+
+  align-items: flex-end;
+  background: center / contain url("./../assets/avatar.jpg") no-repeat;
+  width: 100%;
+  height: 400px;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+    height: 100px;
+    background-color: rgb(204 168 14 / 52%);
+
+    &__name {
+      padding-top: 20px;
+      font-weight: 500;
+      font-family: "Teko", sans-serif;
+      font-size: 65px;
+    }
+
+    &__job {
+      font-size: 24px;
+      letter-spacing: 1.5px;
+      font-weight: 300;
+    }
+  }
+}
+
+.left-container {
+  padding-bottom: 40px;
+  color: rgba(255, 255, 255, 0.959);
+  .card {
+    padding: 40px 40px 0px 40px;
+    &__title {
+      display: flex;
+      align-items: center;
+      font-weight: 900;
+      letter-spacing: 1px;
+      font-size: 32px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.712);
+      margin-bottom: 20px;
+
+      .mat-icon {
+        font-size: 50px;
+        height: 55px;
+        width: 50px;
+        margin-right: 15px;
+        border-bottom: 3px solid rgb(216, 213, 44);
+      }
+    }
+
+    &__content {
+      font-weight: 300;
+      letter-spacing: 0.3px;
+      font-size: 16px;
+      line-height: 25px;
+
+      .list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+
+        .mat-icon {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.right-container {
+  .card {
+    padding: 50px 50px 0px 50px;
+    color: #373d4cf1;
+    &__title {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 32px;
+      color: rgb(219, 191, 32);
+      border-bottom: 2px solid #373d4c3a;
+      margin-bottom: 20px;
+
+      .mat-icon {
+        font-size: 50px;
+        height: 55px;
+        width: 50px;
+        margin-right: 15px;
+        border-bottom: 3px solid rgb(216, 213, 44);
+      }
+    }
+
+    &__content {
+      font-weight: 300;
+      letter-spacing: 0.3px;
+      font-size: 16px;
+      line-height: 25px;
+
+      .list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+
+        .mat-icon {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+tr {
+  display: flex;
+  align-items: flex-start;
+}
+.table {
+  .col-left {
+    mat-icon {
+      padding-left: 3px;
+      font-size: 12px;
+
+      width: 16px;
+    }
+    font-size: 12px;
+    width: 120px;
+  }
+  .col-right {
+    font-size: 16px;
+    font-weight: 400;
+    small {
+      font-weight: 300;
+    }
+  }
+}
+
+.dflex {
+  display: flex;
+}
+
+.stepping {
+  margin: 15px 7px 0 0;
+  height: 108px;
+  border: 1px dashed #373d4cf1;
+}
+.step1 {
+  position: absolute;
+  border: 4px solid #373d4cf1;
+  border-radius: 100%;
+  margin: -4px;
+}
+.step2 {
+  position: absolute;
+  border: 4px solid #373d4cf1;
+  border-radius: 100%;
+  margin: 50px 0px 0px -4px;
+}
+.step3 {
+  position: absolute;
+  border: 4px solid #373d4cf1;
+  border-radius: 100%;
+  margin: 104px 0px 0px -4px;
+}
+
+.col {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    .step1 {
+      margin-right: 10px;
+      position: unset;
+    }
+  }
+  .list {
+    margin-left: 13px;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #373d4cad;
+    mat-icon {
+      color: rgb(196, 193, 38);
+    }
+  }
+}
+
+.col:first-child {
+  margin-right: 50px;
+}
+
+.multiple {
+  padding: 40px 40px 0px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  .card {
+    max-width: 240px;
+    padding: 0;
+  }
+  .list {
+    font-weight: 400;
+  }
+
+  .list:before {
+    font-size: 8px;
+    content: "\2B24";
+    color: #373d4cad;
+    padding-right: 6px;
+  }
+}
+
+.skill {
+  .title {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .bar {
+    height: 10px;
+    background-color: #373d4cad;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
